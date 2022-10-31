@@ -1,37 +1,42 @@
 import { useEffect, useState } from "react"
 
-const Lista = () => {
+const ListaTotal = () => {
     const [Lista, setLista] = useState([])
 
-    // const prueba = <TotalDeLista/>
+    
 
     useEffect(() => {
-        const url = 'http://localhost:3001/api/Lista'
+        const url = 'http://localhost:3001/api/juguetes'
 
         fetch(url)
             .then(response =>
-                console.log(response)
-                //response.json()
+                response.json()
             )
             .then(({ data }) => {
-                //const ultimoProducto = data[data.length - 1]
                 setLista(data)
             })
     }, [])
 
-    if (Lista) {
-        console.log(Lista);
+    let lista = []
+
+    for (let i = 0; i < Lista.length; i++) {
+        lista.push(<p>
+            <p className="listaListElement"> <b> Nombre:</b> {Lista[i].name}</p>
+            <p className="listaListElement"> <b> Descripción:</b> {Lista[i].description}</p>
+            <p className="listaListElement"> <b> Categoria:</b> {Lista[i].category}</p>
+            <hr className="hrProduct"/>
+            </p>);
     }
+    
+     return (
+         <section>
+            <h3>lista</h3>
+                         {
+                    lista.map(Lista => <div className="ListaP"> {Lista} </div>)
+                }
+         </section>
 
-
-    // return (
-    //     <section>
-    //         <h3>Ultimo producto</h3>
-    //         <p>Nombre: {producto.name}</p>
-    //         <p>Descripcion: {producto.description}</p>
-    //         <p>Detalle:</p>
-    //     </section>
-    // )
+     )
 }
 
-export default Lista
+export default ListaTotal
