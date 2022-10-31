@@ -22,7 +22,7 @@ const ListaTotal = () => {
     for (let i = 0; i < Lista.length; i++) {
         lista.push(<p>
             <p className="listaListElement"> <b> Nombre:</b> {Lista[i].name}</p>
-            <p className="listaListElement"> <b> Descripción:</b> {Lista[i].description}</p>
+            <p className="listaListElement"> <b> Descripción:</b> {Lista[i].descripcion}</p>
             <p className="listaListElement"> <b> Categoria:</b> {Lista[i].category}</p>
             <hr className="hrProduct"/>
             </p>);
