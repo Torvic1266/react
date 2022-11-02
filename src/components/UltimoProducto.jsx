@@ -15,8 +15,11 @@ const UltimoProducto = () => {
             .then(({ data }) => {
                const ultimoProducto = data[data.length - 1]
                 setProducto(ultimoProducto)
+            console.log(data)
             })
+            
     }, [])
+    
 
     if (producto) {
         console.log(producto);
@@ -24,10 +27,9 @@ const UltimoProducto = () => {
 
 
     return (
-        <section>
-            <h3>Ultimo producto</h3>
-            <p>Nombre: {producto.name}</p>
-            
+        <section className="sectionUltimo">
+            <h3 className="ultimoItem">Ultimo producto</h3>
+            <p className="ultimoItem">Nombre: {producto.name}</p>
         </section>
     )
 }

@@ -13,6 +13,7 @@ const ListaTotal = () => {
                 response.json()
             )
             .then(({ data }) => {
+                console.log(data)
                 setLista(data)
             })
     }, [])
@@ -32,7 +33,7 @@ const ListaTotal = () => {
          <section>
             <h3>lista</h3>
                          {
-                    lista.map(Lista => <div className="ListaP"> {Lista} </div>)
+                    lista.map(Lista => <div className="Lista"> {Lista} </div>)
                 }
          </section>
 

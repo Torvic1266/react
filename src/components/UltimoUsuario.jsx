@@ -23,10 +23,9 @@ const UltimoUsuario = () => {
 
 
     return (
-        <section>
-            <h3>Ultimo usuario</h3>
-            <p>Nombre: {usuario.name}</p>
-            
+        <section className="sectionUltimo">
+            <h3 className="ultimoItem">Ultimo usuario</h3>
+            <p className="ultimoItem">Nombre: {usuario.name}</p>
         </section>
     )
 }
