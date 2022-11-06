@@ -5,7 +5,7 @@ const TotalDeUsuarios = () => {
 
     
     useEffect(() => {
-        const url = 'http://localhost:3001/api/usuarios'
+        const url = `http://localhost:3001/api/juguetes`
 
         fetch(url)
             .then(response => 
@@ -19,9 +19,10 @@ const TotalDeUsuarios = () => {
     const totalDeUsuarios = usuarios.length
 
     return (
-        <section className="totalUsuarios">
+        <section>
             <h3 className="h3-usuariosT">Total de usuarios</h3>
             <p className="p-usuariosT">{totalDeUsuarios}</p>
+
         </section>
     )
 }

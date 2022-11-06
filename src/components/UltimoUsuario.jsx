@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react"
+// import TotalDeUsuarios from "./TotalDeUsuarios"
 
 const UltimoUsuario = () => {
     const [usuario, setUsuario] = useState([])
 
-   
-    useEffect(() => {
-        const url = 'http://localhost:3001/api/usuarios'
+    // const prueba = <TotalDeUsuarios/>
 
+    useEffect(() => {
+        const url = `http://localhost:3001/api/usuarios`
         fetch(url)
             .then(response =>
                 response.json()
@@ -17,7 +18,7 @@ const UltimoUsuario = () => {
             })
     }, [])
 
-    if (usuario) {
+    if (usuario) { 
         console.log(usuario);
     }
 
@@ -25,7 +26,10 @@ const UltimoUsuario = () => {
     return (
         <section className="sectionUltimo">
             <h3 className="ultimoItem">Ultimo usuario</h3>
+            {/* <img className="imgUltimo" src={usuario.avatar} alt="" /> */}
             <p className="ultimoItem">Nombre: {usuario.name}</p>
+            <p className="ultimoItem">Email: {usuario.email}</p>
+            {/* <p className="ultimoItem">Detalle:</p> */}
         </section>
     )
 }

@@ -1,37 +1,37 @@
-import Lista from "./Lista";
-import ProductosCategorias from "./ProductosCategorias";
-import TotalDeCategorias from "./TotalDeCategorias";
-import TotalDeProductos from "./TotalDeProductos";
-import TotalDeUsuarios from "./TotalDeUsuarios";
-import UltimoProducto from "./UltimoProducto";
-import UltimoUsuario from "./UltimoUsuario";
-import '../styleMain.css';
+import TotalDeCategorias from "./TotalDeCategorias"
+import TotalDeProductos from "./TotalDeProductos"
+import TotalDeUsuarios from "./TotalDeUsuarios"
+import UltimoProducto from "./UltimoProducto"
+import UltimoUsuario from "./UltimoUsuario"
+import ProductosCategorias from "./ProductosCategorias"
+import Lista from "./Lista"
+import '../styleMain.css'
 
-const MainDashboards = () => {
+const MainDashboard = () => {
 
   return (
     
-    <section className="mainSection">
-
+      <section className="mainSection">
         <article className="totales">
-            <div className="totalCategorias"><TotalDeCategorias/></div>
-            <div className="totalProductos"><TotalDeProductos/></div>
-            <div className="totalUsuarios"><TotalDeUsuarios/></div>
+          <div className="totalProductos"><TotalDeProductos /></div>
+          <div className="totalCategorias"><TotalDeCategorias /></div>
+          <div className="totalUsuarios"><TotalDeUsuarios /></div>
         </article>
-
         <article className="ultimos">
-          <div className="ultimoProducto"><UltimoProducto/></div>
-          <div className="ultimoUsuario"><UltimoUsuario/></div>
+          <div className="ultimoUsuario"><UltimoUsuario /></div>
+          <div className="ultimoProducto"><UltimoProducto /></div>
         </article>
-
         <article className="lastArticle">
-          <div className="productosCategorias"><ProductosCategorias/></div>
-          <div className="lista"><Lista/></div>
+          <div className="productosCategorias">
+            <ProductosCategorias />
+          </div>
+          <div className="lista">
+            <Lista />
+          </div>
         </article>
-
-    </section>
+      </section>
 
   )
 }
 
-export default MainDashboards
+export default MainDashboard
