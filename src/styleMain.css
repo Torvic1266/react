@@ -7,7 +7,7 @@
 }
 
 .mainSection {
-  background-color: rgb(245, 245, 245);
+ background-color: antiquewhite;
 }
 
 .divMain {
@@ -20,7 +20,7 @@
   display: flex;
   padding: 20px;
   border-bottom-right-radius: 20px;
-  border-bottom: 5px solid #3c7d8f;
+  border-bottom: 5px solid #ff0000;
   justify-content: space-around;
 }
 
@@ -36,7 +36,7 @@
 .totalProductos,
 .totalCategorias,
 .totalUsuarios {
-  border: 3px solid #00a8a8;
+  border: 3px solid orangered;
   padding: 10px;
   border-radius: 10px;
   margin: 50px;
@@ -52,8 +52,8 @@
 .totalProductos:hover,
 .totalCategorias:hover,
 .totalUsuarios:hover {
-  background-color: #00a8a8;
-  color: #fff;
+  background-color: #ffa846;
+  color: rgb(0, 0, 0);
 }
 
 .h3-productsT,
@@ -123,12 +123,18 @@
 /* PRODUCTOS POR CATEGORIA */
 
 .productosCategorias {
-  background-color: #FFA500;
+  background-color: #ffed9f;
   margin: 20px;
   padding: 20px;
-  border-radius: 20px;
-  color: rgb(53, 53, 53);
+  border-radius: 40px;
+  color: rgb(0, 0, 0);
 }
+
+.productosCategorias:hover{
+  background-color: #ffd30f;
+}
+
+
 
 .productosCategorias p {
   margin-top: 10px;
@@ -137,7 +143,11 @@
 /* LISTADO DE PRODUCTOS */
 
 .lista {
-  margin: 20px;
+  margin: 40px;
+  border-radius: 40px;
+  background-color: #ffd30f;
+  padding: 20px;
+
 }
 
 .hrProduct {
@@ -183,27 +193,27 @@
   padding-top: 20px;
   min-height: 100vh;
   width: 30%;
-  border-right: 4px solid #3c7d8f;
-  background-color: #fae1cf;
+  background-color: #ff9379ea;
+  
 }
 
 .navbar-nav {
   display: flex;
-  flex-direction: column;
+  flex-direction:column;
 }
 
 .nav-link {
   margin: 10px 20px;
-  text-decoration: none;
+  text-decoration:line-through;
   color: #000;
   display: block;
-  transition: 1s;
+  transition: 0.5s;
   border-radius: 20px;
 }
 
 .nav-link:hover {
   padding: 5px 10px;
-  background-color: #fff;
+  background-color: rgb(255, 82, 1);
 }
 
 @media (max-width: 800px) {
