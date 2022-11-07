@@ -6,7 +6,7 @@ const TotalDeProductos = () => {
 
 
     useEffect(() => {
-        const url = `http://localhost:3001/api/juguetes`
+        const url = "http://localhost:3001/api/juguetes"
 
         fetch(url)
             .then(response =>
@@ -21,7 +21,7 @@ const TotalDeProductos = () => {
 
     return (
         <section>
-            <h3 className="h3-productsT">Total de productos</h3>
+            <h3 className="h3-productsT">Total de Productos</h3>
             <p className="p-productosT">{totalDeProductos}</p>
         </section>
     )

@@ -3,7 +3,7 @@ import { useEffect, useState } from "react"
 const ProductosCategorias = () => {
     const [pCategorias, setPCategorias] = useState([])
     useEffect(() => {
-        const url = `http://localhost:3001/api/categorias`
+        const url = "http://localhost:3001/api/categorias"
 
         fetch(url)
             .then(response => 

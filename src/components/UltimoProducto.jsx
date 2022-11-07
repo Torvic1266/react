@@ -7,7 +7,7 @@ const UltimoProducto = () => {
     // const prueba = <TotalDeProductos/>
 
     useEffect(() => {
-        const url = `http://localhost:3001/api/juguetes`
+        const url = "http://localhost:3001/api/juguetes"
 
         fetch(url)
             .then(response =>
@@ -28,8 +28,8 @@ const UltimoProducto = () => {
         <section className="sectionUltimo">
             <h3 className="ultimoItem">Ultimo producto</h3>
             {/* <img className="imgUltimo" src={producto.imagen} alt="" /> */}
-            <p className="ultimoItem">Nombre: {producto.name}</p>
-            <p className="ultimoItem">Descripcion: {producto.description}</p>
+            <p className="ultimoItem">Nombre: {producto.nombre}</p>
+            <p className="ultimoItem">Descripcion: {producto.descripcion}</p>
             {/* <p className="ultimoItem">Detalle:</p> */}
         </section>
     )

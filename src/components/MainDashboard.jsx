@@ -13,21 +13,18 @@ const MainDashboard = () => {
     
       <section className="mainSection">
         <article className="totales">
-          <div className="totalProductos"><TotalDeProductos /></div>
-          <div className="totalCategorias"><TotalDeCategorias /></div>
-          <div className="totalUsuarios"><TotalDeUsuarios /></div>
+          <div className="totalProductos"><TotalDeProductos/></div>
+          <div className="totalCategorias"><TotalDeCategorias/></div>
+          <div className="totalUsuarios"><TotalDeUsuarios/></div>
         </article>
         <article className="ultimos">
-          <div className="ultimoUsuario"><UltimoUsuario /></div>
-          <div className="ultimoProducto"><UltimoProducto /></div>
+          <div className="ultimoUsuario"><UltimoUsuario/></div>
+          <div className="ultimoProducto"><UltimoProducto/></div>
         </article>
         <article className="lastArticle">
-          <div className="productosCategorias">
-            <ProductosCategorias />
+          <div className="productosCategorias"><ProductosCategorias/>
           </div>
-          <div className="lista">
-            <Lista />
-          </div>
+          <div className="lista"><Lista/></div>
         </article>
       </section>
 

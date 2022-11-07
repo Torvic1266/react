@@ -31,8 +31,6 @@
 
 /* TOTAL DE PRODUCTOS */
 
-
-
 .totalProductos,
 .totalCategorias,
 .totalUsuarios {
@@ -133,8 +131,6 @@
 .productosCategorias:hover{
   background-color: #ffd30f;
 }
-
-
 
 .productosCategorias p {
   margin-top: 10px;

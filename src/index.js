@@ -17,21 +17,20 @@ import Lista from "./components/Lista"
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <NavBar />,
+    element: <NavBar/>,
     children: [
       {
         path: "lista",
-        element: <div className="lista"><Lista /></div>
+        element: <div className="lista"><Lista/></div>
       },
       {
         path: "home",
         element: 
-          <MainDashboard />
-        
+          <MainDashboard/>
       },
       {
         path: "t-categorias",
-        element: <div className="totalCategorias"><TotalDeCategorias /></div>
+        element: <div className="totalCategorias"><TotalDeCategorias/></div>
       },
       {
         path: "t-productos",
@@ -43,9 +42,7 @@ const router = createBrowserRouter([
       },
       {
         path: "categoria",
-        element: <div className="productosCategorias">
-          <ProductosCategorias/>
-        </div>
+        element: <div className="productosCategorias"><ProductosCategorias/></div>
       },
       {
         path: "u-usuario",

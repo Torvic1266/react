@@ -7,7 +7,7 @@ const UltimoUsuario = () => {
     // const prueba = <TotalDeUsuarios/>
 
     useEffect(() => {
-        const url = `http://localhost:3001/api/usuarios`
+        const url = "http://localhost:3001/api/usuario"
         fetch(url)
             .then(response =>
                 response.json()
@@ -25,9 +25,9 @@ const UltimoUsuario = () => {
 
     return (
         <section className="sectionUltimo">
-            <h3 className="ultimoItem">Ultimo usuario</h3>
+            <h3 className="ultimoItem">Ultimo Usuario</h3>
             {/* <img className="imgUltimo" src={usuario.avatar} alt="" /> */}
-            <p className="ultimoItem">Nombre: {usuario.name}</p>
+            <p className="ultimoItem">Nombre: {usuario.nombre}</p>
             <p className="ultimoItem">Email: {usuario.email}</p>
             {/* <p className="ultimoItem">Detalle:</p> */}
         </section>

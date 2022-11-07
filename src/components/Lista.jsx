@@ -5,7 +5,7 @@ const Lista = () => {
 
 
     useEffect(() => {
-        const url = `http://localhost:3001/api/juguetes`
+        const url = "http://localhost:3001/api/juguetes"
 
         fetch(url)
             .then(response =>
@@ -22,8 +22,8 @@ const Lista = () => {
     for (let i = 0; i < product.length; i++) {
         producto.push(<p>
             <p className="productoListElement"> <b> Nombre:</b> {product[i].name}</p>
-            <p className="productoListElement"> <b> Descripción:</b> {product[i].description}</p>
-            <p className="productoListElement"> <b> Categoria:</b> {product[i].category}</p>
+            <p className="productoListElement"> <b> Descripcion:</b> {product[i].descripcion}</p>
+            <p className="productoListElement"> <b> Categoria:</b> {product[i].categoria}</p>
             {/* <a className="productoListLink" href={product[i].allProductDetails}>Detalle</a>*/}
             <hr className="hrProduct"/>
             </p>);
