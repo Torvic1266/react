@@ -18,11 +18,11 @@ const ProductosCategorias = () => {
     return (
         <section>
         
-            <h3>Productos por Categorias</h3>
+            <h3>Productos Categorias</h3>
 
-            {pCategorias.map(item => <p key={item.categoria}>
+            {pCategorias.map(item => <p key={item.categorias}>
 
-                <b>{item.categoria}:</b>
+                <b>{item.categorias}:</b>
                 <p>{item.productos} producto/s</p>
             
             </p>)}
