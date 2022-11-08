@@ -9,25 +9,20 @@ const ProductosCategorias = () => {
             .then(response => 
                 response.json()
             )
-            .then(({countByCategory}) => {
-                setPCategorias(countByCategory)
+            .then(({ data }) => {
+                setPCategorias( data )
             })  
     }, [])
 
-    
+        
+    const totalDeCategorias = pCategorias.length
+
     return (
         <section>
-        
-            <h3>Productos Categorias</h3>
-
-            {pCategorias.map(item => <p key={item.categorias}>
-
-                <b>{item.categorias}:</b>
-                <p>{item.productos} producto/s</p>
-            
-            </p>)}
+            <h3 className="h3-productsT">Total de Categorías</h3>
+            <p className="p-productosT">{totalDeCategorias}</p>
         </section>
-    )}
-
+    )
+}
 
 export default ProductosCategorias

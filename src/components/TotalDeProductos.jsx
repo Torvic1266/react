@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react"
 
-
 const TotalDeProductos = () => {
     const [products, setProducts] = useState([])
 

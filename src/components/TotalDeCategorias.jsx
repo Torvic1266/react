@@ -11,17 +11,17 @@ const TotalDeCategorias = () => {
             .then(response => 
                 response.json()
             )
-            .then(({countByCategory}) => {
-                setCategorias(countByCategory)
+            .then(({ data }) => {
+                setCategorias(data)
             })
     }, [])
 
     const totalDeCategorias = categorias.length
 
     return (
-        <section className="seccionCategorias">
-            <h3 className="h3-categoriasT">Total De Categorias</h3>
-            <p className="p-categoriasT">{totalDeCategorias}</p>
+        <section>
+            <h3 className="h3-productsT">Total de Categorías</h3>
+            <p className="p-productosT">{totalDeCategorias}</p>
         </section>
     )
 }
