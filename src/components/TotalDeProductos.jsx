@@ -19,7 +19,7 @@ const TotalDeProductos = () => {
     const totalDeProductos = products.length
 
     return (
-        <section>
+        <section style={{ backgroundColor: "#FADC87"}}>
             <h3 className="h3-productsT">Total de Productos</h3>
             <p className="p-productosT">{totalDeProductos}</p>
         </section>

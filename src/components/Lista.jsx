@@ -30,7 +30,7 @@ const Lista = () => {
     }
 
     return (
-        <section>
+        <section style={{ backgroundColor: "#FADC87"}}>
 
             <h3>Lista</h3>
             

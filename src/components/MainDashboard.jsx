@@ -9,7 +9,7 @@ const MainDashboard = () => {
 
   return (
     
-      <section className="mainSection">
+      <section className="mainSection" style={{ backgroundColor: "#FADC87"}}>
         <div className="mainContainer">
         <article className="totales">
           <div className="totalProductos"><TotalDeProductos/></div>

@@ -25,7 +25,7 @@ const UltimoProducto = () => {
 
 
     return (
-        <section className="sectionUltimo">
+        <section className="sectionUltimo" style={{ backgroundColor: "#FADC87"}}>
             <h3 className="ultimoItem">Ultimo producto</h3>
             <p className="ultimoItem">Nombre: {producto.name}</p>
             <p className="ultimoItem">Descripcion: {producto.descripcion}</p>

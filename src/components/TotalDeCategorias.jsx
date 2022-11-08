@@ -19,7 +19,7 @@ const TotalDeCategorias = () => {
     const totalDeCategorias = categorias.length
 
     return (
-        <section>
+        <section style={{ backgroundColor: "#FADC87"}}>
             <h3 className="h3-productsT">Total de Categorías</h3>
             <p className="p-productosT">{totalDeCategorias}</p>
         </section>

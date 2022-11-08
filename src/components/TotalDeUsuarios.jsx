@@ -19,7 +19,7 @@ const TotalDeUsuarios = () => {
     const totalDeUsuarios = usuarios.length
 
     return (
-        <section>
+        <section style={{ backgroundColor: "#FADC87"}}>
             <h3 className="h3-usuariosT">Total De Usuarios</h3>
             <p className="p-usuariosT">{totalDeUsuarios}</p>
 
