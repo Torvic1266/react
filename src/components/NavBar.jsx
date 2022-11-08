@@ -5,7 +5,7 @@ const NavBar = () => {
     return (
         <>
             <nav className="navbar">
-                <img src="/totaltoyslogo.jpeg" alt="" style={{ width: "300px" }}/>
+            <img className="imgNavbar" src="/logo-Total-Toys.jpg" alt="" style={{ width: "300px" }}/>
                 <NavLink className="navbar-brand nav-link" to={`home`}>Dashboard Totaltoys</NavLink>
                 <div className="navbar-nav">
                     <NavLink className="nav-link" end to={`lista`}>Lista</NavLink>

@@ -5,7 +5,7 @@ const TotalDeCategorias = () => {
 
     
     useEffect(() => {
-        const url = "http://localhost:3001/api/categorias"
+        const url = "https://totaltoys.herokuapp.com/api/categorias"
 
         fetch(url)
             .then(response => 

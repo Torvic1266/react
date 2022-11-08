@@ -3,24 +3,35 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .mainSection {
  background-color: antiquewhite;
+ width: 100%;
 }
 
 .divMain {
   display: flex;
 }
 
+.imgNavbar {
+  border-radius: 15px;
+  margin: 20px;
+}
+
+
 /* COMPONENTE DE TOTALES */
+
+.mainContainer {
+  display: flex;
+  justify-content:space-evenly;
+}
 
 .totales {
   display: flex;
   padding: 20px;
-  border-bottom-right-radius: 10px;
-  border-bottom: 3px solid #ff0000;
+  flex-direction: column;
   justify-content: space-around;
 }
 
@@ -34,9 +45,8 @@
 .totalProductos,
 .totalCategorias,
 .totalUsuarios {
-  border: 3px solid orangered;
+  border: 2px solid orangered;
   padding: 10px;
-  border-radius: 10px;
   margin: 50px;
   height: fit-content;
   text-align: center;
@@ -45,13 +55,6 @@
   justify-content: center;
   align-items: center;
   transition: 1s;
-}
-
-.totalProductos:hover,
-.totalCategorias:hover,
-.totalUsuarios:hover {
-  background-color: #ffa846;
-  color: rgb(0, 0, 0);
 }
 
 .h3-productsT,
@@ -76,6 +79,8 @@
 
 .ultimos {
   padding: 10px;
+  width: 50%;
+  flex-direction: column;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -85,10 +90,7 @@
 
 .ultimoProducto,
 .ultimoUsuario {
-  margin: 20px;
   padding: 20px;
-  border-radius: 40px;
-  margin: 50px;
   height: fit-content;
   text-align: center;
   display: flex;
@@ -96,7 +98,8 @@
   justify-content: center;
   align-items: center;
   background-color: #fa703a;
-  width: 40%;
+  width: 100%;
+  margin-top: 20px;
   transition: 1s;
   color: rgb(0, 0, 0);
   box-shadow: 2px 2px 10px rgb(0, 0, 0, 0.5);
@@ -125,11 +128,8 @@
   margin: 20px;
   padding: 20px;
   border-radius: 40px;
+  height: 10%;
   color: rgb(0, 0, 0);
-}
-
-.productosCategorias:hover{
-  background-color: #ffd30f;
 }
 
 .productosCategorias p {
@@ -140,7 +140,6 @@
 
 .lista {
   margin: 40px;
-  border-radius: 40px;
   background-color: #ffd30f;
   padding: 20px;
 
@@ -156,7 +155,7 @@
 
 .lastArticle {
   margin: 20px;
-  display: flex;
+  padding: 20px;
   background-color: #fff;
 }
 
@@ -179,10 +178,6 @@
   padding: 3px 10px;
 }
 
-.productoListLink:hover {
-  padding: 5px 20px;
-}
-
 /* ESTILOS PARA EL NAV BAR */
 
 .navbar {
@@ -200,16 +195,11 @@
 
 .nav-link {
   margin: 10px 20px;
-  text-decoration:line-through;
+  text-decoration: none;
   color: #000;
   display: block;
   transition: 0.5s;
   border-radius: 20px;
-}
-
-.nav-link:hover {
-  padding: 5px 10px;
-  background-color: rgb(255, 82, 1);
 }
 
 @media (max-width: 800px) {

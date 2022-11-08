@@ -5,7 +5,7 @@ const Lista = () => {
 
 
     useEffect(() => {
-        const url = "http://localhost:3001/api/juguetes"
+        const url = "https://totaltoys.herokuapp.com/api/juguetes"
 
         fetch(url)
             .then(response =>

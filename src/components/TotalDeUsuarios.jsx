@@ -5,7 +5,7 @@ const TotalDeUsuarios = () => {
 
     
     useEffect(() => {
-        const url = "http://localhost:3001/api/usuarios"
+        const url = "https://totaltoys.herokuapp.com/api/usuarios"
 
         fetch(url)
             .then(response => 
