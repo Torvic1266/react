@@ -29,15 +29,15 @@ const router = createBrowserRouter([
           <MainDashboard/>
       },
       {
-        path: "t-categorias",
+        path: "categorias",
         element: <div className="totalCategorias"><TotalDeCategorias/></div>
       },
       {
-        path: "t-productos",
+        path: "productos",
         element: <div className="totalProductos"><TotalDeProductos/></div>
       },
       {
-        path: "t-usuarios",
+        path: "usuarios",
         element: <div className="totalUsuarios"><TotalDeUsuarios/></div>
       },
       {
@@ -45,11 +45,11 @@ const router = createBrowserRouter([
         element: <div className="productosCategorias"><ProductosCategorias/></div>
       },
       {
-        path: "u-usuario",
+        path: "usuario",
         element: <div className="ultimoUsuario"><UltimoUsuario/></div>
       },
       {
-        path: "u-producto",
+        path: "producto",
         element: <div className="ultimoProducto"><UltimoProducto/></div>
       }
     ],
